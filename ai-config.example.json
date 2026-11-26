@@ -1,0 +1,22 @@
+{
+  "apiUrl": "http://localhost:8000/api/ai",
+  "apiKey": "votre-cle-api-ici",
+  "model": "gpt-4-vision",
+  "temperature": 0.7,
+  "maxTokens": 2000,
+  "timeout": 30000,
+  "capabilities": {
+    "generateObjects": true,
+    "suggestBooleanOperations": true,
+    "optimizeScenes": true,
+    "generateAnimations": true,
+    "analyzeProjects": true
+  },
+  "promptTemplates": {
+    "generateObject": "Crée un objet 3D basé sur cette description: {prompt}. Retourne un objet JSON avec les propriétés géométriques (type, dimensions, etc.).",
+    "suggestBoolean": "Quelle opération booléenne (union, soustraction, intersection) serait la plus appropriée entre ces objets: {objects}? Retourne l'opération et les IDs des objets.",
+    "optimizeScene": "Optimise cette scène 3D pour {criteria}. Retourne une version optimisée de la scène.",
+    "generateAnimation": "Crée une animation pour ces objets: {objects}. Retourne une description de l'animation avec les keyframes.",
+    "analyzeProject": "Analyse ce projet 3D et suggère des améliorations. Retourne une liste de suggestions."
+  }
+}

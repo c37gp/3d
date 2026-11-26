@@ -1,0 +1,35 @@
+{
+  "name": "fusion360-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Logiciel de modélisation 3D procédurale inspiré de Fusion 360 - Modélisation, animation et export complets dans le navigateur",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^7.14.0",
+    "@babylonjs/gui": "^7.14.0",
+    "@babylonjs/loaders": "^7.14.0",
+    "@babylonjs/serializers": "^7.14.0",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "csg": "^1.0.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/babylonjs": "^7.14.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "oxlint": "^1.94.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.4.0"
+  }
+}
